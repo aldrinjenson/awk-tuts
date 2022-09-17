@@ -51,6 +51,6 @@ awk 'NR>1{print $5}' *.tsv| sort | uniq | awk 'END {print NR - 1}'
 # using a hashmap
 
 # Find the first employee hired
-sort -k 7 payroll.tsv | head -2 | awk '{print $1, $2, $7}'
+sort -k 7 payroll.tsv | head -1 | awk '{print $1, $2, $7}'
 
 
